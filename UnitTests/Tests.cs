@@ -65,7 +65,7 @@ namespace UnitTests
         {
             for (int i = 0; i < 10; ++i)
             {
-                int a = Rng.Next(30);
+                int a = Rng.Next(30)+2;
                 Assert.AreEqual(RecursiveOperations.NeP.Call(a), NextPrime(a));
             }
         }
